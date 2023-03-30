@@ -6,4 +6,3 @@ jupyterlab
 pip-tools
 pre-commit==2.21.0
 nose
-sqlfluff==1.4.5
