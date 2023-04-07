@@ -25,7 +25,7 @@ def output():
             "features": features,
             "hatches": hatch_w,
             "text_size": text_size,
-            "font": fonts,
+            #"font": fonts,
             "align": align,
         },
     )

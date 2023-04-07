@@ -132,34 +132,34 @@ text_size = widgets.BoundedFloatText(
     value=20, min=0, max=50, step=0.5, description="Font Size:", disabled=False
 )
 # Changing Fonts
-fonts = widgets.Dropdown(
-    options=[
-        "Arial",
-        "Bookman Old Style",
-        "Broadway",
-        "Brush Script M7",
-        "Century",
-        "Century Gothic",
-        "Comic Sans",
-        "Courier New",
-        "Elephant",
-        "Franklin Gothic Heavy",
-        "Garamond",
-        "Georgia",
-        "Impact",
-        "Ink Free",
-        "Magneto",
-        "Old English Text MT",
-        "Papyrus",
-        "Sans Serif",
-        "Stencil",
-        "Times New Roman",
-        "Vivaldi",
-    ],
-    value="Courier New",
-    description="Fonts:",
-    disabled=False,
-)
+# fonts = widgets.Dropdown(
+#     options=[
+#         "Arial",
+#         "Bookman Old Style",
+#         "Broadway",
+#         "Brush Script M7",
+#         "Century",
+#         "Century Gothic",
+#         "Comic Sans",
+#         "Courier New",
+#         "Elephant",
+#         "Franklin Gothic Heavy",
+#         "Garamond",
+#         "Georgia",
+#         "Impact",
+#         "Ink Free",
+#         "Magneto",
+#         "Old English Text MT",
+#         "Papyrus",
+#         "Sans Serif",
+#         "Stencil",
+#         "Times New Roman",
+#         "Vivaldi",
+#     ],
+#     value="Courier New",
+#     description="Fonts:",
+#     disabled=False,
+# )
 # Alignment
 align = widgets.Dropdown(
     options=[
@@ -202,13 +202,13 @@ def ui():
         [t2a2r1, t2a2r2, t2a2r3, t2a2r4, t2a2r5]
     )  # Combining into 1 accordion
     # Combining accordions to make the tab
-    tab2 = tab2_accord2#widgets.Accordion(children=[tab2_accord1, tab2_accord2], selected_index=1)
+    tab2 = tab2_accord2 # widgets.Accordion(children=[tab2_accord1, tab2_accord2], selected_index=1)
     # adding names
-    #accordion_titles = ["Hovmoller", "Cross Section"]
-    #[tab2.set_title(i, title) for i, title in enumerate(accordion_titles)]
+    # accordion_titles = ["Hovmoller", "Cross Section"]
+    # [tab2.set_title(i, title) for i, title in enumerate(accordion_titles)]
     # Final Tab
     color_accord = widgets.HBox([dark_mode, color_drop, hatch_w])
-    text_accord = widgets.HBox([fonts, text_size, align])
+    text_accord = widgets.HBox([text_size, align])#fonts,
     t3_accord = widgets.Accordion(children=[color_accord, text_accord])
     accordion_titles = ["Color", "Text"]
     [t3_accord.set_title(i, title) for i, title in enumerate(accordion_titles)]

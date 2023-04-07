@@ -177,14 +177,14 @@ def f(
         features,
         hatches,
         text_size,
-        font,
+        #font,
         align,
 ):
-    font_dic = {
-        "family": font,
-        "weight": "normal",
-        "size": text_size,
-    }
+    # font_dic = {
+    #     "family": font,
+    #     "weight": "normal",
+    #     "size": text_size,
+    # }
     if dark:
         plt.style.use("dark_background")
     else:
@@ -238,7 +238,7 @@ def f(
                     + " at Latitude "
                     + str(lats[lat[0]])
         )
-        plt.title(title + r"$^\circ$", font=font_dic, loc=align)
+        plt.title(title + r"$^\circ$", size=text_size, loc=align)
         plt.xlabel("Longitude", size=20)
         plt.ylabel("depth [m]", size=20)
         cb = plt.colorbar()
@@ -266,7 +266,7 @@ def f(
                     + " at Longitude "
                     + str(lons[lon[0]])
         )
-        plt.title(title + r"$^\circ$", font=font_dic, loc=align)
+        plt.title(title + r"$^\circ$", size=text_size, loc=align)
         plt.xlabel("Latitude", size=20)
         plt.ylabel("depth [m]", size=20)
         cb = plt.colorbar(
@@ -309,7 +309,7 @@ def f(
                     + str(depths[depth[0]])
                     + "m."
             )
-        plt.title(title, font=font_dic, loc=align)
+        plt.title(title, size=text_size, loc=align)
     plt.xticks(size=20)
     plt.yticks(size=20)
 
