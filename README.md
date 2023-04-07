@@ -1,5 +1,6 @@
 # XSLICE README
-
+https://mybinder.org/v2/gh/tbui0525/XSLICE-GODAS/HEAD?labpath=%2Fvoila%2Frender%2FXSLICE_Lite.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tbui0525/XSLICE-GODAS/HEAD?labpath=voila%2Frender%2FXSLICE_Lite.ipynb)
 ###  Feel free to clone and experiment with adding new features and widgets in a separate branch
 
 
